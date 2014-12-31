@@ -4,20 +4,20 @@
 module.exports = {
 
 	'facebookAuth' : {
-		'clientID' 		: '1', // your App ID
-		'clientSecret' 	: '1', // your App Secret
+		'clientID' 		: '', // your App ID
+		'clientSecret' 	: '', // your App Secret
 		'callbackURL' 	: 'http://localhost:8080/auth/facebook/callback' //your call back url testing one already set up
 	},
 
 	'twitterAuth' : {
-		'consumerKey' 		: '1',
-		'consumerSecret' 	: '1',
+		'consumerKey' 		: '',
+		'consumerSecret' 	: '',
 		'callbackURL' 		: 'http://localhost:8080/auth/twitter/callback'
 	},
 
 	'googleAuth' : {
-		'clientID' 		: '1',
-		'clientSecret' 	: '1',
+		'clientID' 		: '',
+		'clientSecret' 	: '',
 		'callbackURL' 	: 'http://localhost:8080/auth/google/callback'
 	}
 
