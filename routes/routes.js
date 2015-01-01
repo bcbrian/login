@@ -164,6 +164,7 @@ module.exports = function(app, passport) {
 	app.get('/unlink/facebook', function(req, res) {
 		var user            = req.user;
 		user.facebook.token = undefined;
+		user.facebook.id = undefined;
 		user.save(function(err) {
 			res.redirect('/profile');
 		});
@@ -173,6 +174,7 @@ module.exports = function(app, passport) {
 	app.get('/unlink/twitter', function(req, res) {
 		var user           = req.user;
 		user.twitter.token = undefined;
+		user.twitter.id = undefined;
 		user.save(function(err) {
 		   res.redirect('/profile');
 		});
@@ -182,6 +184,7 @@ module.exports = function(app, passport) {
 	app.get('/unlink/google', function(req, res) {
 		var user          = req.user;
 		user.google.token = undefined;
+		user.google.id = undefined;
 		user.save(function(err) {
 		   res.redirect('/profile');
 		});
