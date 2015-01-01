@@ -16,13 +16,13 @@ block content
 					h3
 						span.fa.fa-user 
 						| Local
-					p
+					p.break
 						strong id
 						|: #{user._id}
-					p
+					p.break
 						strong email
 						|: #{user.local.email}
-					p
+					p.break
 						strong password
 						|: #{user.local.password}
 			.col-sm-6
@@ -31,23 +31,23 @@ block content
 						span.fa.fa-facebook 
 						|  Facebook
 					if user.facebook.id
-						p
+						p.break
 							strong FBid
 							|: #{user.facebook.id}
-						p
+						p.break
 							strong FBtoken
 							|: #{user.facebook.token}
-						p
+						p.break
 							strong FBemail
 							|: #{user.facebook.email}
-						p
+						p.break
 							strong FBname
 							|: #{user.facebook.name}
-						p
+						p.break
 							a.btn.btn-primary(href="/unlink/facebook") Unlink
 					else
-						p You should connect your Facebook account.
-						p
+						p.break You should connect your Facebook account.
+						p.break
 							a.btn.btn-primary(href="/connect/facebook") Connect Facebook
 		.row
 			.col-sm-6
@@ -56,23 +56,23 @@ block content
 						span.fa.fa-twitter
 						|  Twitter
 					if user.twitter.id
-						p
+						p.break
 							strong Tid
 							|: #{user.twitter.id}
-						p
+						p.break
 							strong Ttoken
 							|: #{user.twitter.token}
-						p
+						p.break
 							strong Tusername
 							|: #{user.twitter.username}
-						p
+						p.break
 							strong TdisplayName
 							|: #{user.twitter.displayName}
-						p
+						p.break
 							a.btn.btn-info(href="/unlink/twitter") Unlink
 					else
-						p You should connect your Twitter account.
-						p
+						p.break You should connect your Twitter account.
+						p.break
 							a.btn.btn-info(href="/connect/twitter") Connect Twitter
 			.col-sm-6
 				.well
@@ -80,21 +80,21 @@ block content
 						span.fa.fa-google
 						|  Google+
 					if user.google.id
-						p
+						p.break
 							strong Gid
 							|: #{user.google.id}
-						p
+						p.break
 							strong Gtoken
 							|: #{user.google.token}
-						p
+						p.break
 							strong Gemail
 							|: #{user.google.email}
-						p
+						p.break
 							strong Gname
 							|: #{user.google.name}
-						p
+						p.break
 							a.btn.btn-danger(href="/unlink/google") Unlink
 					else
-						p You should connect your Google account.
-						p
+						p.break You should connect your Google account.
+						p.break
 							a.btn.btn-danger(href="/connect/google") Connect Google+

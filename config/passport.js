@@ -211,7 +211,7 @@ module.exports = function(passport) {
 
 	},
 	function(req, token, tokenSecret, profile, done) {
-
+		console.log(profile);
 		// asynchronous
 		process.nextTick(function() {
 
